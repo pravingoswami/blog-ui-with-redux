@@ -17,6 +17,7 @@ import PostsList from './components/PostsList'
 
 import UsersPost from './components/UsersPost'
 import PostShow from './components/PostShow'
+import Home from './components/Home'
 
 import { BrowserRouter, Route, Link } from "react-router-dom";
 
@@ -32,7 +33,7 @@ class App extends React.Component {
       <div>
         <BrowserRouter>
         <Navbar color="dark" light expand="md">
-        <NavbarBrand style = {{color : "white"}} ><Link to = "/"  style = {{textDecoration : "none", color : "white"}} ><strong>HOME</strong></Link></NavbarBrand>       
+        <NavbarBrand style = {{color : "white"}} ><Link to = "/home"  style = {{textDecoration : "none", color : "white"}} ><strong>HOME</strong></Link></NavbarBrand>       
         <NavbarBrand style = {{color : "white"}} ></NavbarBrand>    
            
         <Nav className="mr-auto" navbar>
@@ -49,6 +50,7 @@ class App extends React.Component {
        
   
         </Container>
+        <Route path = "/home" component = {Home} exact = {true} />
 
         <Route path = "/users" component = {UsersList} exact = {true} />
         <Route path = "/users/:userId" component = {UsersPost} exact = {true} />
