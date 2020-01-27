@@ -32,8 +32,8 @@ class App extends React.Component {
     return(
       <div>
         <BrowserRouter>
-        <Navbar color="dark" light expand="md">
-        <NavbarBrand style = {{color : "white"}} ><Link to = "/home"  style = {{textDecoration : "none", color : "white"}} ><strong>HOME</strong></Link></NavbarBrand>       
+        <Navbar expand="md" style = {{backgroundColor : "#343a40"}} >
+        <NavbarBrand style = {{color : "white"}} ><Link to = "/"  style = {{textDecoration : "none", color : "white"}} ><strong>HOME</strong></Link></NavbarBrand>       
         <NavbarBrand style = {{color : "white"}} ></NavbarBrand>    
            
         <Nav className="mr-auto" navbar>
@@ -50,7 +50,7 @@ class App extends React.Component {
        
   
         </Container>
-        <Route path = "/home" component = {Home} exact = {true} />
+        <Route path = "/" component = {Home} exact = {true} />
 
         <Route path = "/users" component = {UsersList} exact = {true} />
         <Route path = "/users/:userId" component = {UsersPost} exact = {true} />
