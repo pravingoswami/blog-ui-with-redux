@@ -5,7 +5,7 @@ import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNav
 function Home(props){
     return(
         <div>
-                    <MDBView src={`https://mdbootstrap.com/img/Photos/Others/images/76.jpg`} fixed>
+        <MDBView src={`https://mdbootstrap.com/img/Photos/Others/images/76.jpg`} fixed>
           <MDBMask className="rgba-white-light d-flex justify-content-center align-items-center">
             <MDBContainer>
               <MDBRow>
