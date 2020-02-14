@@ -6,7 +6,7 @@ export const setPosts = (posts) => {
 
 export const startGetPosts = () => {
     return (dispatch) => {
-        axios.get('https://jsonplaceholder.typicode.com/posts')
+        axios.get('https://dct-cors.herokuapp.com/https://jsonplaceholder.typicode.com/posts')
             .then(response => {
                 dispatch(setPosts(response.data))
             })

@@ -6,7 +6,7 @@ export const setComments = (comments) => {
 
 export const startGetComments = () => {
     return (dispatch) => {
-        axios.get('https://jsonplaceholder.typicode.com/comments')
+        axios.get('https://dct-cors.herokuapp.com/https://jsonplaceholder.typicode.com/comments')
             .then(response => {
                 dispatch(setComments(response.data))
             })

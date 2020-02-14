@@ -6,7 +6,7 @@ export const setUsers = (users) => {
 
 export const startGetUSers = () => {
     return (dispatch) => {
-        axios.get('https://jsonplaceholder.typicode.com/users')
+        axios.get('https://dct-cors.herokuapp.com/https://jsonplaceholder.typicode.com/users')
             .then(response => {
                 console.log(response.data)
                 dispatch(setUsers(response.data))

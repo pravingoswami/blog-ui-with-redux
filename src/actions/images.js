@@ -6,7 +6,7 @@ export const setImages = (images) => {
 
 export const startGetImages = () => {
     return (dispatch) => {
-        axios.get('https://picsum.photos/v2/list?page=2&limit=100')
+        axios.get('https://dct-cors.herokuapp.com/https://picsum.photos/v2/list?page=2&limit=100')
             .then(response => {
                 dispatch(setImages(response.data))
             })
