@@ -11,35 +11,7 @@ function PostCard (props){
 
     return(
         <div>
-             {/* <MDBCol md="6" xl="5" className="mb-4">
-            <MDBView className="overlay rounded z-depth-2" waves>
-              <img
-                src="https://mdbootstrap.com/img/Photos/Others/images/19.jpg"
-                alt=""
-                className="img-fluid"
-              />
-              <a href="#!">
-                <MDBMask overlay="white-slight" />
-              </a>
-            </MDBView>
-            <MDBCardBody className="pb-0">
-              <a href="#!" className="blue-text">
-                <h5 className="font-weight-bold mt-2 mb-3">
-                  <MDBIcon icon="eye" className="pr-2" />
-                  Entertainment
-                </h5>
-              </a>
-              <h4 className="font-weight-bold mb-3">Title of the news</h4>
-              <p>
-                Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                amet, consectetur, adipisci velit cupidatat proident
-                voluptatem quia numquam.
-              </p>
-              <MDBBtn color="success" rounded>
-                MDBView more
-              </MDBBtn>
-            </MDBCardBody>
-          </MDBCol> */}
+
 
                         <MDBRow >
                                     <MDBCol lg="7"  style = {{ margin :"0px", padding : "0px", width : "100%"}}  >
